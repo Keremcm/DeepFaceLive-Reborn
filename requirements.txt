@@ -1,0 +1,3 @@
+# Default install = NVIDIA GPU. For CPU only use: pip install -r requirements-base.txt -r requirements-cpu.txt
+-r requirements-base.txt
+-r requirements-gpu.txt

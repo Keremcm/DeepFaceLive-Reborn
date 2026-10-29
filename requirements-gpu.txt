@@ -1,0 +1,10 @@
+# NVIDIA GPU: onnxruntime CUDA build + CUDA 12 / cuDNN 9 libraries from PyPI
+# (no system CUDA toolkit needed; dfl preloads them at start-up)
+onnxruntime-gpu==1.22.0
+nvidia-cudnn-cu12>=9,<10
+nvidia-cublas-cu12>=12.4,<13
+nvidia-cuda-runtime-cu12>=12.4,<13
+nvidia-cufft-cu12>=11,<12
+nvidia-curand-cu12>=10,<11
+nvidia-cuda-nvrtc-cu12>=12.4,<13
+nvidia-nvjitlink-cu12>=12.4,<13

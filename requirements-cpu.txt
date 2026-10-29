@@ -1,0 +1,2 @@
+# CPU only (slow: expect a few fps)
+onnxruntime>=1.18

@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.egg-info/
+build/
+dist/
+# models are large and downloaded separately
+models/*.dfm
+models/enhancers/*.onnx
+models/enhancers/*.hash

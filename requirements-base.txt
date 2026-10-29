@@ -1,0 +1,8 @@
+# Core dependencies (plain list: also read by pyproject.toml)
+numpy>=1.26,<2
+opencv-contrib-python>=4.8,<4.13
+PyQt6>=6.5
+onnx>=1.14
+h5py>=3.8
+numexpr>=2.8
+pyvirtualcam>=0.11

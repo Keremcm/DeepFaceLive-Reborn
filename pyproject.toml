@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dfl-reborn"
+version = "0.1.0"
+description = "DeepFaceLive Reborn: offline and live face swap with DFM models for Linux"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = { file = "LICENSE" }
+dynamic = ["dependencies", "optional-dependencies"]
+
+[project.scripts]
+dfl = "dfl.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["dfl*", "xlib*", "modelhub*"]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements-base.txt"] }
+
+[tool.setuptools.dynamic.optional-dependencies]
+gpu = { file = ["requirements-gpu.txt"] }
+cpu = { file = ["requirements-cpu.txt"] }
